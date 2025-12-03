@@ -6,6 +6,8 @@ The goal of this lab is to move from environment setup to active engagement. We 
 
 ### Skills Learned
 
+This lab develops the ability to perform active web application reconnaissance using Gobuster to brute-force directory paths and identify hidden resources. The process involves analyzing HTTP status codes and server responses to locate sensitive configuration files like php.ini and robots.txt. It also covers exploiting a Command Injection vulnerability by manipulating unsanitized input fields to execute arbitrary system commands. The exercise concludes with achieving Remote Code Execution (RCE), verified by retrieving the current user context and conducting post-exploitation enumeration of the Docker container's file system.
+
 ### Tools Used 
 
 - Kali Linux: Attacker machine
