@@ -66,6 +66,28 @@ We browse to /php.ini and discover that the file is readable and reveals critica
 
 Normally, a server should show a blank page or a 403 Forbidden error, but ours shows a list of every file in that folder. We identified a backup file named config.inc.php.bak. This is a high-value target; attackers can often download backup files to view the application's source code and hardcoded database credentials in plain text.
 
+### Phase 3: Exploitation (Command Injection) 
+
+After mapping the application and verifying vulnerabilities, I moved to active exploitation. The goal was to demonstrate Remote Code Execution (RCE) by leveraging a Command Injection vulnerability in the web application.
+
+### <img width="661" height="131" alt="image" src="https://github.com/user-attachments/assets/1ac35f43-8e14-4c24-9626-da3b7f77af52" />
+
+The application executed the ping command and immediately executed the ls -la command.
+
+### <img width="652" height="312" alt="image" src="https://github.com/user-attachments/assets/578c2384-ca4b-4d9c-a47a-bbf6cbd9f2aa" />
+
+The command output confirms that the application is running under the user context of www-data. By successfully executing commands that return file listings owned by www-data, we have verified that our injected commands are being executed by the web server process itself.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
