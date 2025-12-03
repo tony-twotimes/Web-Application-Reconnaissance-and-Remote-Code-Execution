@@ -17,9 +17,15 @@ The goal of this lab is to move from environment setup to active engagement. We 
 
 ### Steps 
 
-### Step 1 Install Gobuster on Kali Linux Machine 
+### Prerequisite: Install Gobuster on Kali Linux Machine 
 
 ### <img width="758" height="363" alt="image" src="https://github.com/user-attachments/assets/b77b10c1-9a64-4aac-a68f-564f766f3599" />
+
+### Phase 1: Reconnaissance (Forced Browsing)
+
+### <img width="788" height="525" alt="image" src="https://github.com/user-attachments/assets/16c9bf91-a0e7-4e2f-b6fd-22333eeb382c" />
+
+
 
 
 
