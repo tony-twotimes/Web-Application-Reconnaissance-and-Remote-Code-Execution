@@ -78,7 +78,11 @@ The application executed the ping command and immediately executed the ls -la co
 
 The command output confirms that the application is running under the user context of www-data. By successfully executing commands that return file listings owned by www-data, we have verified that our injected commands are being executed by the web server process itself.
 
+### Conclusion
 
+In this lab, I successfully transitioned from passive environment setup to active engagement by chaining reconnaissance with exploitation. By using Gobuster, I uncovered critical information leaks—specifically the exposed /php.ini configuration and the /config directory listing—that provided the intelligence needed to understand the target's security posture.
+
+I then leveraged this knowledge to exploit a Command Injection vulnerability, successfully bypassing the application's intended logic to execute arbitrary system commands. The final verification step—retrieving the directory listing and confirming the www-data user context—proved that I had achieved Remote Code Execution (RCE).
 
 
 
