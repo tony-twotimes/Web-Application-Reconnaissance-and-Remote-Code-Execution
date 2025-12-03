@@ -17,6 +17,11 @@ The goal of this lab is to move from environment setup to active engagement. We 
 
 ### Steps 
 
+### Step 1 Install Gobuster on Kali Linux Machine 
+
+### <img width="758" height="363" alt="image" src="https://github.com/user-attachments/assets/b77b10c1-9a64-4aac-a68f-564f766f3599" />
+
+
 
 
 
