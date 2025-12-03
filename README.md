@@ -44,6 +44,36 @@ We found /config with a status 301 (Redirect). This directory likely contains co
 
 *This scan moved us from blindly throwing exploits into the dark, to targeted attacking.* 
 
+### Phase 2: Manual Verification 
+
+Automated tools give us leads, but we must verify them manually to confirm the vulnerability and gather actionable intelligence. We used the browser on our Kali machine to inspect the findings.
+
+### 1. Verify /robots.txt 
+
+### <img width="916" height="402" alt="image" src="https://github.com/user-attachments/assets/cb8b3737-8b3c-45c1-a260-d37d1aa3a628" />
+
+We browse to robots.txt and find "Disallow: /" which confirms that the administrator is actively trying to hide the entire site strucutre from search engines. 
+
+### 2. Verify /php.ini
+
+### <img width="905" height="352" alt="image" src="https://github.com/user-attachments/assets/e0bb4478-5251-4f14-a96a-755083b9a1de" />
+
+We browse to /php.ini and discover that the file is readable and reveals critical server findings. Namely, that "allow_url_include" is set to "On" which is a dangerous misconfiguration that allows us to potentially execute code hosted on our attacker machine. 
+
+### 3. Verify /config
+
+### <img width="1019" height="518" alt="image" src="https://github.com/user-attachments/assets/e2fa191a-7abe-4104-955d-3afe3c055eae" />
+
+Normally, a server should show a blank page or a 403 Forbidden error, but ours shows a list of every file in that folder. We identified a backup file named config.inc.php.bak. This is a high-value target; attackers can often download backup files to view the application's source code and hardcoded database credentials in plain text.
+
+
+
+
+
+
+
+
+
 
 
 
