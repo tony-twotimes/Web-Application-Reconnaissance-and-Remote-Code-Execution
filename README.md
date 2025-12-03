@@ -29,14 +29,14 @@ In an earlier lab, we conducted Nmap scans. Think of this as finding a building 
 
 ### Our Findings 
 
-### 1 The blueprints 
+### 1.) The blueprints 
 We found /php.ini with a status 200 (it's accessible). This is a massive security failure for the target. This file contains the configuration settings for the PHP environment running the server. It tells us exactly what the server and and can't do. This is like we walked into the building and we found the blueprints of the building laying out in plainsite. 
 
-### 2 The Treasure Map
+### 2.) The Treasure Map
 
 We found the /robots.txt also with a status 200. This is a ile that tells search engines which parts of the site NOT to look at. This is like a treasure map. 
 
-### 3 The Keys 
+### 3.) The Keys 
 
 We found /config with a status 301 (Redirect). This directory likely contains configuration files for the web app. 
 
