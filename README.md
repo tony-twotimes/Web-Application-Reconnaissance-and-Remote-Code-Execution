@@ -1,1 +1,41 @@
-# Web-Application-Reconnaissance-and-Remote-Code-Execution
+# Setting Up Vulnerable Services on a Windows VM Using Docker
+
+## Objective
+
+The goal of this lab is to move from environment setup to active engagement. We will first map the attack surface of the DVWA web application using directory brute-forcing to identify hidden resources. Once the structure is mapped, we will exploit a Command Injection vulnerability to achieve Remote Code Execution (RCE) on the underlying Docker container.
+
+### Skills Learned
+
+### Tools Used 
+
+- Kali Linux: Attacker machine
+- Gobuster: Directory enumeration tool
+- Browser: Firefox (for manual exploitation)
+- Target: Windows 10 VM hosting Docker (DVWA container)
+
+
+
+### Steps 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
